@@ -85,7 +85,7 @@ The interactive Tableau dashboard provides a visual overview of the sales and re
 
 ### Dashboard Screenshot
 
-![Sales & Revenue Dashboard](Dashboard Sales and Revenue Analysis/Dashboard Sales and Revenue Analysis.png)
+![Sales & Revenue Dashboard](Dashboard/Dashboard_Sales_and_Revenue_Analysis.png)
 
 ## Business Implications
 
