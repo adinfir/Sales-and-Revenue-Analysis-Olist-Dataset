@@ -2,29 +2,29 @@
 
 ## Project Overview
 
-This project analyzes sales and revenue performance using the Olist Brazilian E-Commerce dataset. The analysis focuses on identifying monthly revenue trends, understanding product category contributions, and evaluating freight value relative to product revenue.
+This project explores sales and revenue performance using the Olist Brazilian E-Commerce dataset. I focused on three areas: monthly sales trends, revenue contribution by product category, and freight value compared to product revenue.
 
-The goal is to provide business insights that can help stakeholders understand sales performance and identify areas that require further evaluation.
+Through this analysis, I aim to understand how sales perform over time, which product categories generate the most revenue, and how freight value varies across categories.
 
 ## Business Objectives
 
-This project is divided into three business cases, each addressing a different aspect of sales and revenue performance.
+This project covers three business cases to explore different aspects of Olist's sales and revenue performance.
 
 ### Business Case 1: Sales Trend Analysis
 
-**Objective:** Evaluate sales performance over time by analyzing monthly revenue and order trends to identify revenue growth patterns, fluctuations, and peak sales periods.
+**Objective:** Understand how sales and revenue change over time by looking at monthly performance, identifying periods of growth or decline, and finding the month with the highest revenue.
 
 ### Business Case 2: Product Category Revenue Analysis
 
-**Objective:** Identify the product categories that contribute the most to total revenue by evaluating category-level revenue performance and their respective contributions.
+**Objective:** Find out which product categories generate the most revenue and how much each category contributes to overall sales.
 
 ### Business Case 3: Freight Value Contribution Analysis
 
-**Objective:** Evaluate freight value relative to product revenue across product categories to identify categories with relatively high freight-to-revenue ratios.
+**Objective:** Compare freight value with product revenue across categories to see which categories have a relatively high freight-to-revenue ratio.
 
 ## Dataset
 
-The analysis uses the Olist Brazilian E-Commerce Public Dataset, which contains information about orders, products, payments, customers, and sellers.
+This project uses the [Olist Brazilian E-Commerce Public Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce), which contains data on orders, products, customers, payments, and sellers.
 
 **Main Tables Used:**
 - `orders_dataset`
@@ -33,7 +33,7 @@ The analysis uses the Olist Brazilian E-Commerce Public Dataset, which contains 
 - `product_category_name_translation`
 
 **Data Scope:**
-- Only orders with `order_status = 'delivered'` are included in the sales and revenue analysis.
+- The analysis only includes orders with `order_status = 'delivered'`.
 - Product revenue is calculated using `price`.
 - `freight_value` is analyzed separately from product revenue.
 
@@ -49,14 +49,14 @@ The analysis uses the Olist Brazilian E-Commerce Public Dataset, which contains 
 
 ## Analysis Workflow
 
-1. **Import Libraries** — Import the required Python libraries for data manipulation, analysis, and visualization.
-2. **Data Gathering** — Load the datasets required for the analysis.
-3. **Data Understanding** — Examine dataset structures, dimensions, column names, and data types to understand the information contained in each dataset.
-4. **Data Quality Assessment & Cleaning** — Assess data quality by identifying missing values, duplicates, and inconsistencies, then perform the necessary data cleaning.
-5. **Data Preparation** — Prepare the datasets for analysis through data transformation, merging, and creation of derived columns where necessary.
-6. **Exploratory Data Analysis (EDA)** — Analyze the data to answer the defined business questions using statistical calculations and visualizations.
-7. **Key Insights** — Summarize the main findings from each business case.
-8. **Business Implications** — Translate the analytical findings into relevant business considerations and potential areas for further evaluation.
+1. **Import Libraries** — Import the Python libraries needed for data analysis and visualization.
+2. **Data Gathering** — Load the datasets used throughout the analysis.
+3. **Data Understanding** — Explore the datasets, including their structure, dimensions, column names, and data types.
+4. **Data Quality Assessment & Cleaning** — Check for missing values, duplicates, and inconsistencies, then handle the identified data quality issues.
+5. **Data Preparation** — Prepare the data for analysis by transforming and merging tables and creating additional columns where needed.
+6. **Exploratory Data Analysis (EDA)** — Explore the data and answer the business questions through calculations and visualizations.
+7. **Key Insights** — Highlight the main findings from each business case.
+8. **Business Implications** — Discuss what the findings could mean for sales performance and potential areas for further evaluation.
 
 ## Key Findings
 
@@ -67,21 +67,21 @@ The analysis uses the Olist Brazilian E-Commerce Public Dataset, which contains 
 
 ### Business Case 2: Product Category Revenue Analysis
 
-- `health_beauty` ranked first, generating **R$1,233,131.72**, contributing **9.33%** of total revenue.
-- `watches_gifts` ranked second, generating **R$1,166,176.98**, contributing **8.82%** of total revenue.
+- `health_beauty` generated the highest revenue at **R$1,233,131.72**, contributing **9.33%** of total revenue.
+- `watches_gifts` ranked second, generating **R$1,166,176.98** or **8.82%** of total revenue.
 
 ### Business Case 3: Freight Value Contribution Analysis
 
-- `home_comfort_2` recorded the highest freight-to-revenue ratio at **53.97%**.
-- `flowers` ranked second, with a ratio of **44.04%**.
+- `home_comfort_2` had the highest freight-to-revenue ratio at **53.97%**.
+- `flowers` followed with a ratio of **44.04%**.
 
 ## Dashboard Preview
 
-The interactive Tableau dashboard provides a visual overview of the sales and revenue analysis, including monthly revenue trends, product category performance, and freight value contribution.
+The dashboard brings together the main findings from this analysis, covering monthly revenue trends, product category performance, and freight value contribution.
 
 ### Interactive Dashboard
 
-**[View Interactive Dashboard on Tableau Public](https://public.tableau.com/app/profile/adin4572/viz/DashboardSalesandRevenueAnalysis/Dashboard1)**
+**[View the Interactive Dashboard on Tableau Public](https://public.tableau.com/app/profile/adin4572/viz/DashboardSalesandRevenueAnalysis/Dashboard1)**
 
 ### Dashboard Screenshot
 
@@ -89,13 +89,11 @@ The interactive Tableau dashboard provides a visual overview of the sales and re
 
 ## Business Implications
 
-Based on the analysis, several business considerations can be identified:
+The findings offer a few areas worth looking into:
 
-- **Sales Performance Monitoring:** Monitor monthly revenue and order trends to understand changes in sales performance and identify periods of significant growth or decline.
-- **Product Category Evaluation:** Assess the revenue contribution of top-performing categories to better understand the company's key revenue sources.
-- **Freight Value Evaluation:** Review categories with relatively high freight-to-revenue ratios to identify potential areas for logistics cost evaluation.
-
-These findings provide an overview of sales performance and can serve as a starting point for further business evaluation.
+- **Sales Performance:** November 2017 showed a significant increase in revenue. Monitoring monthly performance can help identify similar growth patterns and periods of declining sales.
+- **Product Category Performance:** `health_beauty` and `watches_gifts` were the top revenue-generating categories. Their contributions provide a starting point for evaluating which product categories play a major role in sales.
+- **Freight Value:** Categories such as `home_comfort_2` and `flowers` had relatively high freight-to-revenue ratios. These categories may be worth reviewing to better understand their shipping costs relative to product revenue.
 
 ## Repository Structure
 
@@ -103,15 +101,15 @@ These findings provide an overview of sales performance and can serve as a start
 Olist-Sales-Revenue/
 ├── README.md
 ├── Sales & Revenue.ipynb
-└── Dashboard Sales and Revenue Analysis/
-    └── Dashboard Sales and Revenue Analysis.png
+└── Dashboard/
+    └── Dashboard_Sales_and_Revenue_Analysis.png
 ```
 
 ## Conclusion
 
-This analysis provides an overview of Olist's sales and revenue performance through monthly trends, product category contributions, and freight value comparisons.
+This project provides a closer look at Olist's sales and revenue performance through monthly trends, product category contributions, and freight value comparisons.
 
-The findings highlight the importance of monitoring sales performance, understanding product category contributions, and evaluating freight value relative to product revenue.
+The analysis highlights how revenue changes over time, which categories contribute the most to sales, and where freight value represents a relatively large share of product revenue.
 
 ## Project Category
 
